@@ -1,5 +1,6 @@
 {
     "name": "top hat chat",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*",
