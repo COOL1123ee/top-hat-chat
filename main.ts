@@ -1545,7 +1545,7 @@ controller.player3.onButtonEvent(ControllerButton.B, ControllerButtonEvent.Relea
             . . . . . . . . . . . . . . . . 
             `],
         500,
-        true
+        false
         )
     }
 })
@@ -1927,7 +1927,7 @@ controller.player2.onButtonEvent(ControllerButton.B, ControllerButtonEvent.Relea
             . . . . . . . . . . . . . . . . 
             `],
         500,
-        true
+        false
         )
     }
 })
@@ -2178,7 +2178,7 @@ controller.B.onEvent(ControllerButtonEvent.Released, function () {
             . . . . . . . . . . . . . . . . 
             `],
         500,
-        true
+        false
         )
     }
 })
@@ -2226,7 +2226,7 @@ controller.player4.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
 })
 controller.player3.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     rspons = game.askForString("type what you want to say to your friends", 24)
-    mySprite2.sayText(rspons, 1000, false)
+    mySprite3.sayText(rspons, 1000, false)
 })
 controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Released, function () {
     animation.runImageAnimation(
@@ -2657,4 +2657,4 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.setBackgroundImage(assets.image`tophattopya`)
-music.play(music.createSong(hex`0064000408070200001c00010a006400f40164000004000000000000000000000000000500000406007c008000012405001c000f0a006400f4010a0000040000000000000000000000000000000002c20000000400012c0400080001270c001000012510001400012918001c00012420002400012728002c00012430003400012738003c0001293c004000012544004800012748004c00012450005400012758005c0001275c006000012760006400012764006800012768006c0001276c007000012770007400012774007800012778007c0001247c008000012480008400012788008c00012a90009400031d202498009c0001249c00a0000127a000a4000127a400a8000127a800ac000127ac00b0000127`), music.PlaybackMode.LoopingInBackground)
+music.play(music.createSong(hex`0064000408040105001c000f0a006400f4010a00000400000000000000000000000000000000028a0000000400012c0400080001270c001000012510001400012918001c00012420002400012728002c00012430003400012738003c0001293c004000012544004800012748004c00012450005400012758005c0001275c006000012760006400012764006800012768006c0001276c007000012770007400012774007800012778007c0001247c0080000124`), music.PlaybackMode.LoopingInBackground)
